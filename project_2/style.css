@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    font-family: "Monda";
+    letter-spacing: 4px;
+}
+button {
+    position: absolute;
+    top: 5%;
+    left: calc(50% - 100px);
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+ul {
+    margin: auto;
+}
+li {
+    color: yellow;
+    display: inline-block;
+    font-size: 40px;
+    text-shadow: 0 0 10px white, 0 0 10px red;
+    transition: opacity 1; /* gdy jest zmiana */
+}
+li:nth-child(3), li:nth-last-child(1){
+    transform: rotate(15deg) translateY(4px);
+    animation: neon 1s infinite;
+}
+.off {
+    opacity: 0;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    55% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 0.5;
+    }
+    85% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,32 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(45deg, lightblue 10%, #8f6363 100%);
+}
+#list {
+    display: flex;
+    justify-items: center;
+
+}
+li {
+    display: inline-flex;
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #b6b6b6;
+    justify-content: center;
+}
+li:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+.list-item {
+    font-size: 2em;
+    color: #181818;
+}
+
+

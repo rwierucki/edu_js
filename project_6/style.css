@@ -1,0 +1,24 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(45deg, lightblue 10%, #8f6363 100%);
+}
+.circle  {
+    height: 50px;
+    width: 50px;
+    background-color: dimgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%,-50%);
+    border-radius: 50%;
+    transition: .3s linear;
+}
+.info {
+    font-size: 18px;;
+}
+

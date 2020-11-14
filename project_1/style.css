@@ -1,0 +1,48 @@
+:root {
+    --light: 0.1;
+    --glow: 5px;
+}
+html {
+    font-size: 20px;
+    font-family: 'Monda', sans-serif;
+
+}
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('tree.jpg');
+    background-size: cover;
+    background-position: bottom center;
+}
+.night {
+    height: 100vh;
+    background-color: black;
+  /*  opacity: 0.3; */ /* zmienna */
+    opacity: calc(1 - var(--light)); /* zmienna */
+}
+.neon {
+    font-size: 4rem;
+    color:#deb887;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    letter-spacing: .5rem; /* 0.5 * font-size html */
+    text-shadow: rgba(255, 255, 255, 0.8) 0 0 calc(var(--glow)), #5c0202 0 0 calc(var(--glow));
+    opacity: calc(1 - var(--light));
+}
+.far {
+    font-size: 16rem;
+}
+input {
+    position: absolute;
+    width: 320px;
+    top: 30px;
+    left: 30px;
+    height: 30px;
+}
+
+@media (min-width: 1024) {
+    html {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,16 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+div {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: darksalmon;
+    position: absolute;
+}
+
